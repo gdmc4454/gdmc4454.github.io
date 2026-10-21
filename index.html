@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>안녕하세요! [이름]의 여행 & 프로필 페이지</title>
+    <title>김태현의 여행 & 프로필 페이지</title>
     <style>
         * {
             box-sizing: border-box;
@@ -44,11 +44,28 @@
             margin-bottom: 10px;
             color: #4a5568;
         }
+        .highlight-box {
+            background: #ebf8ff;
+            border-left: 4px solid #3182ce;
+            padding: 20px;
+            border-radius: 0 12px 12px 0;
+            margin-top: 20px;
+        }
+        .highlight-box h3 {
+            color: #2b6cb0;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .people-list {
+            font-size: 0.95em;
+            color: #4a5568;
+            line-height: 1.8;
+        }
 
         /* 유튜브 비디오 반응형 박스 (16:9 비율) */
         .video-container {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 비율 설정 */
+            padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
             border-radius: 12px;
@@ -121,18 +138,35 @@
 
     <div class="container">
         <!-- 프로필 섹션 -->
-        <h1>👋 안녕하세요, [이름]입니다!</h1>
-        <p><strong>여행과 새로운 경험을 기록하는 것을 좋아합니다. ✈️</strong></p>
+        <h1>👋 안녕하세요, 김태현입니다!</h1>
+        <p><strong>발걸음마다 소중한 의미와 추억을 새겨가는 여행가입니다. ✈️</strong></p>
         
         <div>
-            <span class="tag">#자기소개</span>
-            <span class="tag">#여행가</span>
-            <span class="tag">#여행브이로그</span>
+            <span class="tag">#김태현</span>
+            <span class="tag">#유후인선교</span>
+            <span class="tag">#산티아고순례길</span>
+            <span class="tag">#프랑스</span>
+            <span class="tag">#스페인</span>
+        </div>
+
+        <!-- 특별한 추억 강조 섹션 (산티아고 순례길) -->
+        <div class="highlight-box">
+            <h3>🌟 가장 기억에 남는 여행: 산티아고 순례길</h3>
+            <p>
+                고등학교 2학년 때, 파리 여행을 시작으로 프랑스와 스페인에 걸쳐 산티아고 순례길을 걸었습니다. 
+                순례길을 마친 후 바르셀로나까지 이어지며 평생 잊지 못할 소중한 추억을 만들었습니다.
+            </p>
+            <div class="people-list">
+                <strong>함께한 고마운 사람들:</strong><br>
+                • <strong>친구들 (10명):</strong> 서겸, 하원, 주원, 강희, 이세, 주호, 신영, 채이, 주안<br>
+                • <strong>선생님 (3분):</strong> 달쌤, 하꿈쌤, 아천쌤<br>
+                • <strong>졸업생 (2분):</strong> 비나, 예린
+            </div>
         </div>
 
         <!-- 유튜브 동영상 섹션 -->
         <h2>🎬 추천 여행 영상</h2>
-        <p>제가 다녀온 여행지 영상(또는 추천 영상)입니다! 즐겁게 감상해 보세요.</p>
+        <p>여행의 감동을 되새기게 해주는 영상입니다!</p>
         <div class="video-container">
             <iframe 
                 src="https://www.youtube.com/embed/b4yR-FnsARw" 
@@ -146,38 +180,38 @@
         <h2>✈️ 내가 다녀온 여행지</h2>
         <div class="travel-grid">
 
-            <!-- 여행지 1 -->
+            <!-- 여행지 1: 유후인 -->
             <div class="travel-card">
-                <img class="travel-img" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500" alt="제주도">
+                <img class="travel-img" src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?w=500" alt="유후인">
                 <div class="travel-info">
-                    <div class="travel-title">🏖️ 제주도, 대한민국</div>
-                    <div class="travel-date">2024년 7월 방문</div>
+                    <div class="travel-title">🇯🇵 일본 유후인</div>
+                    <div class="travel-date">선교 활동</div>
                     <div class="travel-desc">
-                        에메랄드빛 바다와 맛있는 흑돼지, 그리고 협재 해수욕장의 석양이 가장 기억에 남는 여행이었습니다.
+                        따뜻한 온천 마을 유후인으로 선교를 다녀왔습니다. 마음을 나누고 봉사하며 뜻깊은 시간을 보냈던 곳입니다.
                     </div>
                 </div>
             </div>
 
-            <!-- 여행지 2 -->
+            <!-- 여행지 2: 프랑스 -->
             <div class="travel-card">
-                <img class="travel-img" src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=500" alt="교토">
+                <img class="travel-img" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=500" alt="프랑스">
                 <div class="travel-info">
-                    <div class="travel-title">⛩️ 교토, 일본</div>
-                    <div class="travel-date">2023년 11월 방문</div>
+                    <div class="travel-title">🇫🇷 프랑스 & 순례길</div>
+                    <div class="travel-date">고등학교 2학년</div>
                     <div class="travel-desc">
-                        고즈넉한 거리와 단풍이 어우러진 신사들을 걸으며 힐링했던 아날로그 감성 가득했던 여행입니다.
+                        파리에서의 설레는 시작과 함께, 소중한 인연들과 함께 한마음으로 산티아고 순례길의 첫걸음을 내딛었던 곳입니다.
                     </div>
                 </div>
             </div>
 
-            <!-- 여행지 3 -->
+            <!-- 여행지 3: 스페인 -->
             <div class="travel-card">
-                <img class="travel-img" src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=500" alt="런던">
+                <img class="travel-img" src="https://images.unsplash.com/photo-1543783207-ec64e4d95325?w=500" alt="스페인">
                 <div class="travel-info">
-                    <div class="travel-title">🎡 런던, 영국</div>
-                    <div class="travel-date">2022년 8월 방문</div>
+                    <div class="travel-title">🇪🇸 스페인 (순례길 & 바르셀로나)</div>
+                    <div class="travel-date">고등학교 2학년</div>
                     <div class="travel-desc">
-                        빅벤과 타워브릿지, 박물관 투어로 알차게 채운 유럽 첫 여행지이자 잊지 못할 추억입니다.
+                        순례길을 완주한 후 도착한 바르셀로나까지, 땀 흘리며 걷고 웃으며 함께한 모든 순간이 눈부시게 빛났던 여정입니다.
                     </div>
                 </div>
             </div>
@@ -187,7 +221,6 @@
         <!-- 연락처 -->
         <h2>📫 Contact</h2>
         <p>
-            Email: <a href="mailto:your-email@example.com">your-email@example.com</a><br>
             GitHub: <a href="https://github.com/gdmc4454">github.com/gdmc4454</a>
         </p>
     </div>
