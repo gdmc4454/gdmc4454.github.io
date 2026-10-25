@@ -116,6 +116,12 @@
   }
   .photo-slot img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
+  .photo-pair {
+    display: grid; gap: 16px; margin-top: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  .photo-pair .photo-slot { margin-top: 0; }
+
   .video {
     position: relative; aspect-ratio: 16 / 9; margin-top: 16px;
     background: #000;
@@ -268,6 +274,16 @@
     <div class="photo-slot">
       <img src="images/yuhoin.jpg" alt="산을 배경으로 한 일본 유후인 거리 풍경"
            onerror="this.parentNode.textContent='images/yuhoin.jpg 사진을 올려 주세요'">
+    </div>
+    <div class="photo-pair">
+      <div class="photo-slot">
+        <img src="images/yuhoin2.png" alt="유후인의 산을 배경으로 찍은 단체 사진"
+             onerror="this.parentNode.textContent='images/yuhoin2.png 사진을 올려 주세요'">
+      </div>
+      <div class="photo-slot">
+        <img src="images/yuhoin3.png" alt="유후인의 숲길과 건물 앞에서 찍은 단체 사진"
+             onerror="this.parentNode.textContent='images/yuhoin3.png 사진을 올려 주세요'">
+      </div>
     </div>
   </section>
 
