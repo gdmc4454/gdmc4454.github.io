@@ -116,14 +116,166 @@
   }
   .photo-slot img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-  .photo-pair {
-    display: grid; gap: 16px; margin-top: 16px;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  }
-  .photo-pair .photo-slot { margin-top: 0; }
-
   .video {
     position: relative; aspect-ratio: 16 / 9; margin-top: 16px;
     background: #000;
   }
-  .video iframe {
+  .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+  .crew { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 24px; }
+  .crew div { background: var(--white); padding: 18px 20px; }
+  .crew h3 { font-size: 1.1rem; }
+  .crew p { color: var(--stone); }
+
+  footer {
+    margin-top: 80px; background: var(--sea-deep); color: #b9c7d8;
+    text-align: center; padding: 32px 24px; font-size: .92rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<nav aria-label="페이지 이동">
+  <a href="#places">여행지</a>
+  <a href="#camino">산티아고 순례길</a>
+  <a href="#video">영상</a>
+  <a href="#crew">함께한 사람들</a>
+  <a href="#yufuin">유후인</a>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="who">김태현의 여행 기록</p>
+    <h1>걷고, 나누고,<br>함께 기억한 길</h1>
+    <p class="lead">일본 유후인에서의 선교, 그리고 친구들과 선생님들과 함께 파리에서 바르셀로나까지 걸어간 산티아고 순례길을 소개합니다.</p>
+  </div>
+  <svg class="trail" viewBox="0 0 620 260" aria-hidden="true">
+    <path d="M0 230 C120 230 160 120 270 130 S440 210 620 60" fill="none" stroke="#f2b705" stroke-width="4" stroke-dasharray="3 14" stroke-linecap="round"/>
+    <g transform="translate(560 78) rotate(-38)">
+      <path d="M0 0 H46 M46 0 L28 -16 M46 0 L28 16" fill="none" stroke="#f2b705" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </svg>
+</header>
+
+<main>
+
+  <section id="places">
+    <h2>다녀온 세 곳</h2>
+    <p class="intro">그중에서 가장 오래 기억에 남는 여행은 산티아고 순례길입니다.</p>
+    <div class="places">
+      <article class="place main">
+        <h3>스페인 · 산티아고 순례길</h3>
+        <p class="meta">가장 기억에 남는 여행</p>
+        <p>직접 두 발로 걸으며 친구들, 선생님들과 가까워진 시간.</p>
+      </article>
+      <article class="place">
+        <h3>프랑스 · 파리</h3>
+        <p class="meta">순례길 출발 전 여행</p>
+        <p>순례를 시작하기 전에 함께 도시를 둘러봤습니다.</p>
+      </article>
+      <article class="place">
+        <h3>일본 · 유후인</h3>
+        <p class="meta">선교 여행</p>
+        <p>마음을 나누고 섬기기 위해 다녀온 곳.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="camino">
+    <h2>산티아고 순례길</h2>
+    <p class="intro">고등학교 때 친구들, 선생님들, 졸업생 선배들과 함께 떠난 여행입니다. 파리에서 시작해 순례길을 걷고, 바르셀로나에서 마무리했습니다.</p>
+
+    <ol class="route">
+      <li>
+        <h3>파리</h3>
+        <p>순례길로 가기 전, 파리에서 함께 여행했습니다.</p>
+        <div class="video">
+          <iframe
+            src="https://www.youtube.com/embed/5-Yco0D_J0A"
+            title="파리 여행 영상"
+            loading="lazy"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+        </div>
+      </li>
+      <li class="walk">
+        <h3>산티아고 순례길을 걷다</h3>
+        <p>매일 함께 걸으며 힘들 때 서로 응원했던 길입니다. 여기에 가장 기억나는 장면이나 느낀 점을 적어 보세요.</p>
+        <div class="video">
+          <iframe
+            src="https://www.youtube.com/embed/2N3RoM_J6fw"
+            title="산티아고 순례길을 걷는 영상"
+            loading="lazy"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+        </div>
+      </li>
+      <li>
+        <h3>바르셀로나</h3>
+        <p>순례를 마친 뒤 바르셀로나에서 좋은 추억을 만들었습니다.</p>
+        <div class="video">
+          <iframe
+            src="https://www.youtube.com/embed/-tESYXDa5wo"
+            title="바르셀로나 여행 영상"
+            loading="lazy"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section id="video">
+    <h2>순례길 영상</h2>
+    <p class="intro">우리가 걸었던 길을 영상으로 만나 보세요.</p>
+    <div class="video">
+      <iframe
+        src="https://www.youtube.com/embed/b4yR-FnsARw"
+        title="산티아고 순례길 영상"
+        loading="lazy"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="crew">
+    <h2>함께한 사람들</h2>
+    <p class="intro">이 길은 혼자였다면 걷지 못했을 거예요. 함께 걸어 준 모두에게 고맙습니다.</p>
+    <div class="crew">
+      <div>
+        <h3>친구들</h3>
+        <p>서겸, 하원, 주원, 강희, 이세, 주호, 신영, 채이, 주안</p>
+      </div>
+      <div>
+        <h3>선생님들</h3>
+        <p>달쌤, 하꿈쌤, 아천쌤</p>
+      </div>
+      <div>
+        <h3>졸업생</h3>
+        <p>비나, 예린</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="yufuin">
+    <h2>일본 유후인</h2>
+    <div class="photo-slot">
+      <img src="images/yuhoin.jpg" alt="산을 배경으로 한 일본 유후인 거리 풍경"
+           onerror="this.parentNode.textContent='images/yuhoin.jpg 사진을 올려 주세요'">
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 김태현 · 여행 기록</p>
+</footer>
+
+</body>
+</html>
